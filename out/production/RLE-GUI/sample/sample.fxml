@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="239.0" prefWidth="790.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="239.0" prefWidth="392.0">
+         <children>
+            <Button fx:id="btn1" layoutX="-26.0" layoutY="141.0" mnemonicParsing="false" onAction="#compress" text="Execute" />
+            <Label fx:id="lbl1" layoutX="-181.0" layoutY="68.0" text="Enter input Stream: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="txt1" layoutX="-186.0" layoutY="88.0" prefHeight="25.0" prefWidth="244.0" />
+            <Label fx:id="lbl2" layoutX="113.0" layoutY="27.0" text="Compressed Stream: ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lbl3" layoutX="113.0" layoutY="129.0" text="Decompressed Stream: ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Separator layoutX="100.0" layoutY="11.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Label fx:id="compressedStreamLbl" layoutX="113.0" layoutY="60.0" />
+            <Label fx:id="decompressedStreamLbl" layoutX="113.0" layoutY="161.0" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
